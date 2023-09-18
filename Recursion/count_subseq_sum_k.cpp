@@ -5,6 +5,12 @@ using namespace std;
 int f(int ind,int s, int sum,int arr[], int n)
 {
     int l,r;
+    // condition not satisfied
+    // This can only be done is all elements are +ve
+    if(s>sum)
+    {
+        return 0;
+    }
     if(ind==n)
     {
         if(s==sum)
